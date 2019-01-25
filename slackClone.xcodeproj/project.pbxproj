@@ -7,21 +7,77 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		363F510D494997B38C321FCA /* Pods_slackClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B68A94C83B544C5C54269D /* Pods_slackClone.framework */; };
+		4724864121F4F344004CB552 /* RoundedCornerUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4724864021F4F344004CB552 /* RoundedCornerUIView.swift */; };
+		4724864321F4F451004CB552 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4724864221F4F451004CB552 /* MessageService.swift */; };
+		4724864721F4F48F004CB552 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4724864621F4F48F004CB552 /* Channel.swift */; };
+		4724864921F50062004CB552 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4724864821F50062004CB552 /* ChannelCell.swift */; };
+		4724864C21F507E7004CB552 /* AddChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4724864A21F507E7004CB552 /* AddChannelVC.swift */; };
+		4724864D21F507E7004CB552 /* AddChannelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4724864B21F507E7004CB552 /* AddChannelVC.xib */; };
+		4734B48F21FB9A7700E027C5 /* NewNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4734B48E21FB9A7700E027C5 /* NewNotifications.swift */; };
 		475BB01821F3203100C14240 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BB01721F3203100C14240 /* AppDelegate.swift */; };
-		475BB01A21F3203100C14240 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BB01921F3203100C14240 /* ViewController.swift */; };
 		475BB01D21F3203100C14240 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 475BB01B21F3203100C14240 /* Main.storyboard */; };
 		475BB01F21F3203200C14240 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 475BB01E21F3203200C14240 /* Assets.xcassets */; };
 		475BB02221F3203200C14240 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 475BB02021F3203200C14240 /* LaunchScreen.storyboard */; };
+		475BB1FC21F321A000C14240 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 475BB1FA21F321A000C14240 /* SWRevealViewController.m */; };
+		475BB1FE21F3263A00C14240 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BB1FD21F3263A00C14240 /* ChatVC.swift */; };
+		475BB20021F3264D00C14240 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BB1FF21F3264D00C14240 /* ChannelVC.swift */; };
+		475BB20221F32D1200C14240 /* GradientColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BB20121F32D1200C14240 /* GradientColor.swift */; };
+		475BB20421F335ED00C14240 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BB20321F335ED00C14240 /* LoginVC.swift */; };
+		475BB20621F3366E00C14240 /* coloredPlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BB20521F3366E00C14240 /* coloredPlaceHolder.swift */; };
+		475BB20821F3377200C14240 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BB20721F3377200C14240 /* CreateAccountVC.swift */; };
+		475BB20A21F35FED00C14240 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BB20921F35FED00C14240 /* Constants.swift */; };
+		475BB20D21F3609000C14240 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BB20C21F3609000C14240 /* AuthService.swift */; };
+		475BB20F21F373A600C14240 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BB20E21F373A600C14240 /* RoundedCorner.swift */; };
+		475BB21121F3840C00C14240 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BB21021F3840C00C14240 /* UserDataService.swift */; };
+		475BB21521F39B8D00C14240 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BB21421F39B8D00C14240 /* AvatarCell.swift */; };
+		475BB21721F39C9300C14240 /* AvatarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BB21621F39C9300C14240 /* AvatarVC.swift */; };
+		475BB21921F3A5ED00C14240 /* roundedCornerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BB21821F3A5ED00C14240 /* roundedCornerImage.swift */; };
+		475BB21C21F3A76F00C14240 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 475BB21A21F3A76F00C14240 /* ProfileVC.swift */; };
+		475BB21D21F3A76F00C14240 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 475BB21B21F3A76F00C14240 /* ProfileVC.xib */; };
+		47F3F5E121F9CF1300AA2C13 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F3F5E021F9CF1300AA2C13 /* Message.swift */; };
+		47F3F5E321F9D8EC00AA2C13 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F3F5E221F9D8EC00AA2C13 /* MessageCell.swift */; };
+		47FCCB1921F647BA0063142E /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47FCCB1821F647BA0063142E /* SocketService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00B68A94C83B544C5C54269D /* Pods_slackClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_slackClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		387A36E103618D0AC1730BCA /* Pods-slackClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-slackClone.release.xcconfig"; path = "Pods/Target Support Files/Pods-slackClone/Pods-slackClone.release.xcconfig"; sourceTree = "<group>"; };
+		4724864021F4F344004CB552 /* RoundedCornerUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerUIView.swift; sourceTree = "<group>"; };
+		4724864221F4F451004CB552 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
+		4724864621F4F48F004CB552 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		4724864821F50062004CB552 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
+		4724864A21F507E7004CB552 /* AddChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChannelVC.swift; sourceTree = "<group>"; };
+		4724864B21F507E7004CB552 /* AddChannelVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChannelVC.xib; sourceTree = "<group>"; };
+		4734B48E21FB9A7700E027C5 /* NewNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNotifications.swift; sourceTree = "<group>"; };
 		475BB01421F3203100C14240 /* slackClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = slackClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		475BB01721F3203100C14240 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		475BB01921F3203100C14240 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		475BB01C21F3203100C14240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		475BB01E21F3203200C14240 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		475BB02121F3203200C14240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		475BB02321F3203200C14240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		475BB1F921F3219F00C14240 /* slackClone-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "slackClone-Bridging-Header.h"; sourceTree = "<group>"; };
+		475BB1FA21F321A000C14240 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		475BB1FB21F321A000C14240 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		475BB1FD21F3263A00C14240 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		475BB1FF21F3264D00C14240 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		475BB20121F32D1200C14240 /* GradientColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientColor.swift; sourceTree = "<group>"; };
+		475BB20321F335ED00C14240 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		475BB20521F3366E00C14240 /* coloredPlaceHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coloredPlaceHolder.swift; sourceTree = "<group>"; };
+		475BB20721F3377200C14240 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		475BB20921F35FED00C14240 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		475BB20C21F3609000C14240 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		475BB20E21F373A600C14240 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		475BB21021F3840C00C14240 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
+		475BB21421F39B8D00C14240 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		475BB21621F39C9300C14240 /* AvatarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarVC.swift; sourceTree = "<group>"; };
+		475BB21821F3A5ED00C14240 /* roundedCornerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = roundedCornerImage.swift; sourceTree = "<group>"; };
+		475BB21A21F3A76F00C14240 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		475BB21B21F3A76F00C14240 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
+		47F3F5E021F9CF1300AA2C13 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		47F3F5E221F9D8EC00AA2C13 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		47FCCB1821F647BA0063142E /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
+		F8C1FFA7132BC2BC6A95748B /* Pods-slackClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-slackClone.debug.xcconfig"; path = "Pods/Target Support Files/Pods-slackClone/Pods-slackClone.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				363F510D494997B38C321FCA /* Pods_slackClone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +97,8 @@
 			children = (
 				475BB01621F3203100C14240 /* slackClone */,
 				475BB01521F3203100C14240 /* Products */,
+				AD062897CBDD682EFFC0EF96 /* Pods */,
+				FF3EB8241C2DE0A069DB78F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +113,98 @@
 		475BB01621F3203100C14240 /* slackClone */ = {
 			isa = PBXGroup;
 			children = (
-				475BB01721F3203100C14240 /* AppDelegate.swift */,
-				475BB01921F3203100C14240 /* ViewController.swift */,
-				475BB01B21F3203100C14240 /* Main.storyboard */,
-				475BB01E21F3203200C14240 /* Assets.xcassets */,
+				475BB20B21F3607500C14240 /* Services */,
+				475BB02C21F3216900C14240 /* resources */,
+				475BB02B21F3213E00C14240 /* Controllers */,
+				475BB02A21F3213300C14240 /* Views */,
+				475BB02921F3212500C14240 /* Model */,
 				475BB02021F3203200C14240 /* LaunchScreen.storyboard */,
 				475BB02321F3203200C14240 /* Info.plist */,
 			);
 			path = slackClone;
+			sourceTree = "<group>";
+		};
+		475BB02921F3212500C14240 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4724864621F4F48F004CB552 /* Channel.swift */,
+				47F3F5E021F9CF1300AA2C13 /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		475BB02A21F3213300C14240 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				475BB01B21F3203100C14240 /* Main.storyboard */,
+				475BB20121F32D1200C14240 /* GradientColor.swift */,
+				475BB20521F3366E00C14240 /* coloredPlaceHolder.swift */,
+				475BB20E21F373A600C14240 /* RoundedCorner.swift */,
+				475BB21421F39B8D00C14240 /* AvatarCell.swift */,
+				475BB21821F3A5ED00C14240 /* roundedCornerImage.swift */,
+				475BB21B21F3A76F00C14240 /* ProfileVC.xib */,
+				4724864B21F507E7004CB552 /* AddChannelVC.xib */,
+				4724864021F4F344004CB552 /* RoundedCornerUIView.swift */,
+				4724864821F50062004CB552 /* ChannelCell.swift */,
+				47F3F5E221F9D8EC00AA2C13 /* MessageCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		475BB02B21F3213E00C14240 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				475BB21A21F3A76F00C14240 /* ProfileVC.swift */,
+				475BB01721F3203100C14240 /* AppDelegate.swift */,
+				475BB1FD21F3263A00C14240 /* ChatVC.swift */,
+				475BB1FF21F3264D00C14240 /* ChannelVC.swift */,
+				475BB20321F335ED00C14240 /* LoginVC.swift */,
+				475BB20721F3377200C14240 /* CreateAccountVC.swift */,
+				475BB21621F39C9300C14240 /* AvatarVC.swift */,
+				4724864A21F507E7004CB552 /* AddChannelVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		475BB02C21F3216900C14240 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				475BB1FB21F321A000C14240 /* SWRevealViewController.h */,
+				475BB1FA21F321A000C14240 /* SWRevealViewController.m */,
+				475BB01E21F3203200C14240 /* Assets.xcassets */,
+				475BB1F921F3219F00C14240 /* slackClone-Bridging-Header.h */,
+				475BB20921F35FED00C14240 /* Constants.swift */,
+				4734B48E21FB9A7700E027C5 /* NewNotifications.swift */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		475BB20B21F3607500C14240 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				475BB20C21F3609000C14240 /* AuthService.swift */,
+				475BB21021F3840C00C14240 /* UserDataService.swift */,
+				4724864221F4F451004CB552 /* MessageService.swift */,
+				47FCCB1821F647BA0063142E /* SocketService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AD062897CBDD682EFFC0EF96 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8C1FFA7132BC2BC6A95748B /* Pods-slackClone.debug.xcconfig */,
+				387A36E103618D0AC1730BCA /* Pods-slackClone.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FF3EB8241C2DE0A069DB78F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00B68A94C83B544C5C54269D /* Pods_slackClone.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 475BB02621F3203200C14240 /* Build configuration list for PBXNativeTarget "slackClone" */;
 			buildPhases = (
+				14B84D07DDDBD54939B37B7B /* [CP] Check Pods Manifest.lock */,
 				475BB01021F3203100C14240 /* Sources */,
 				475BB01121F3203100C14240 /* Frameworks */,
 				475BB01221F3203100C14240 /* Resources */,
+				5A21995DDE366CDE566D7F9A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +241,7 @@
 				TargetAttributes = {
 					475BB01321F3203100C14240 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -122,6 +268,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4724864D21F507E7004CB552 /* AddChannelVC.xib in Resources */,
+				475BB21D21F3A76F00C14240 /* ProfileVC.xib in Resources */,
 				475BB02221F3203200C14240 /* LaunchScreen.storyboard in Resources */,
 				475BB01F21F3203200C14240 /* Assets.xcassets in Resources */,
 				475BB01D21F3203100C14240 /* Main.storyboard in Resources */,
@@ -130,13 +278,83 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14B84D07DDDBD54939B37B7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-slackClone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A21995DDE366CDE566D7F9A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-slackClone/Pods-slackClone-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-slackClone/Pods-slackClone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		475BB01021F3203100C14240 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				475BB01A21F3203100C14240 /* ViewController.swift in Sources */,
+				475BB20021F3264D00C14240 /* ChannelVC.swift in Sources */,
+				475BB20621F3366E00C14240 /* coloredPlaceHolder.swift in Sources */,
+				4724864721F4F48F004CB552 /* Channel.swift in Sources */,
+				475BB20821F3377200C14240 /* CreateAccountVC.swift in Sources */,
+				475BB1FE21F3263A00C14240 /* ChatVC.swift in Sources */,
+				475BB21C21F3A76F00C14240 /* ProfileVC.swift in Sources */,
+				475BB20F21F373A600C14240 /* RoundedCorner.swift in Sources */,
+				475BB20421F335ED00C14240 /* LoginVC.swift in Sources */,
+				4724864121F4F344004CB552 /* RoundedCornerUIView.swift in Sources */,
+				4724864C21F507E7004CB552 /* AddChannelVC.swift in Sources */,
+				4724864921F50062004CB552 /* ChannelCell.swift in Sources */,
+				475BB21121F3840C00C14240 /* UserDataService.swift in Sources */,
 				475BB01821F3203100C14240 /* AppDelegate.swift in Sources */,
+				475BB1FC21F321A000C14240 /* SWRevealViewController.m in Sources */,
+				475BB21921F3A5ED00C14240 /* roundedCornerImage.swift in Sources */,
+				475BB21721F39C9300C14240 /* AvatarVC.swift in Sources */,
+				4734B48F21FB9A7700E027C5 /* NewNotifications.swift in Sources */,
+				47FCCB1921F647BA0063142E /* SocketService.swift in Sources */,
+				47F3F5E321F9D8EC00AA2C13 /* MessageCell.swift in Sources */,
+				47F3F5E121F9CF1300AA2C13 /* Message.swift in Sources */,
+				4724864321F4F451004CB552 /* MessageService.swift in Sources */,
+				475BB21521F39B8D00C14240 /* AvatarCell.swift in Sources */,
+				475BB20D21F3609000C14240 /* AuthService.swift in Sources */,
+				475BB20221F32D1200C14240 /* GradientColor.swift in Sources */,
+				475BB20A21F35FED00C14240 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,17 +498,22 @@
 		};
 		475BB02721F3203200C14240 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8C1FFA7132BC2BC6A95748B /* Pods-slackClone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQLDC32ZJ8;
 				INFOPLIST_FILE = slackClone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bahie.slackClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "slackClone/resources/slackClone-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,17 +521,21 @@
 		};
 		475BB02821F3203200C14240 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 387A36E103618D0AC1730BCA /* Pods-slackClone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQLDC32ZJ8;
 				INFOPLIST_FILE = slackClone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.bahie.slackClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "slackClone/resources/slackClone-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

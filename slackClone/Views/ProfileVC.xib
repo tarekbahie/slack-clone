@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileVC" customModule="slackClone" customModuleProvider="target">
+            <connections>
+                <outlet property="emailLbl" destination="Q7O-aY-Yfr" id="2ee-Q1-yWP"/>
+                <outlet property="userImg" destination="H8O-Hl-oNP" id="GaQ-CJ-yHf"/>
+                <outlet property="usrnameLbl" destination="Pg0-YH-B2g" id="c52-Qn-8id"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lxp-xh-HoF" customClass="RoundedCorner" customModule="slackClone" customModuleProvider="target">
+                    <rect key="frame" x="50" y="60" width="275" height="567"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ms-Vz-afO">
+                            <rect key="frame" x="50" y="458.5" width="175" height="50"/>
+                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="175" id="41J-Zv-Efe"/>
+                                <constraint firstAttribute="height" constant="50" id="xs2-ut-eet"/>
+                            </constraints>
+                            <state key="normal" title="Logout">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="logoutBtnPressed:" destination="-1" eventType="touchUpInside" id="XKy-75-1Rp"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJ8-B9-x3p">
+                            <rect key="frame" x="239" y="8" width="28" height="28"/>
+                            <state key="normal" image="closeButton"/>
+                            <connections>
+                                <action selector="backBtnPressed:" destination="-1" eventType="touchUpInside" id="eB3-If-R5I"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="mJ8-B9-x3p" secondAttribute="trailing" constant="8" id="Rb7-Sr-uZO"/>
+                        <constraint firstItem="mJ8-B9-x3p" firstAttribute="top" secondItem="Lxp-xh-HoF" secondAttribute="top" constant="8" id="Uai-yb-Zyk"/>
+                        <constraint firstItem="6ms-Vz-afO" firstAttribute="centerX" secondItem="Lxp-xh-HoF" secondAttribute="centerX" id="bVr-UT-Kfy"/>
+                        <constraint firstItem="6ms-Vz-afO" firstAttribute="centerY" secondItem="Lxp-xh-HoF" secondAttribute="centerY" constant="200" id="ecf-JR-Gw4"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKI-kV-q2P">
+                    <rect key="frame" x="143.5" y="120" width="88" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Bhn-WR-KWx">
+                    <rect key="frame" x="105.5" y="307" width="164" height="53"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bahie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pg0-YH-B2g">
+                            <rect key="frame" x="54" y="0.0" width="56.5" height="27.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bahie@bahie.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7O-aY-Yfr">
+                            <rect key="frame" x="0.0" y="27.5" width="164" height="25.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="H8O-Hl-oNP" customClass="RoundedCornerImage" customModule="slackClone" customModuleProvider="target">
+                    <rect key="frame" x="150" y="196" width="75" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="75" id="B9X-M5-fQv"/>
+                        <constraint firstAttribute="height" constant="75" id="JgQ-8q-nsy"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Lxp-xh-HoF" secondAttribute="trailing" constant="50" id="0Zc-wd-eJt"/>
+                <constraint firstItem="Lxp-xh-HoF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="9Qc-Qs-AwF"/>
+                <constraint firstItem="H8O-Hl-oNP" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-100" id="9v1-le-JhD"/>
+                <constraint firstItem="Bhn-WR-KWx" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="R4l-Dr-zM5"/>
+                <constraint firstItem="yKI-kV-q2P" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="Zkk-Vv-Bko"/>
+                <constraint firstItem="Bhn-WR-KWx" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="aUK-F3-PAl"/>
+                <constraint firstItem="Lxp-xh-HoF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="cDG-3a-XGQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Lxp-xh-HoF" secondAttribute="bottom" constant="40" id="eEr-z1-t9g"/>
+                <constraint firstItem="H8O-Hl-oNP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fVC-r0-r05"/>
+                <constraint firstItem="yKI-kV-q2P" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="oXo-Ke-031"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="130.40000000000001" y="131.78410794602701"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="closeButton" width="28" height="28"/>
+    </resources>
+</document>
