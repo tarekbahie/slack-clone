@@ -10,5 +10,6 @@ pod 'Alamofire'
 pod 'SwiftyJSON'
 pod  'Socket.IO-Client-Swift'
 pod 'SVProgressHUD'
+pod 'IQKeyboardManagerSwift'
 
 end

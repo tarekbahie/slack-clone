@@ -39,6 +39,7 @@ class ChannelCell: UITableViewCell, NewNotifications {
     func configureCell(channel : Channel) {
         self.channelNameLbl.text = channel.channelTitle
         numberOfNewMessagesLbl.text = "\(0)"
+        numberOfNewMessagesLbl.isHidden = true
         numberOfNewMessagesLbl.font = UIFont(name: "HelveticaNeue-Regular", size: 17)
         for id in MessageService.instance.unreadChannels {
             if id == channel.id {

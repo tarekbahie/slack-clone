@@ -17,6 +17,11 @@ class ChatVC: UIViewController {
     @IBOutlet weak var messageTxtField: UITextField!
     @IBOutlet weak var sendBtn: UIButton!
     @IBOutlet weak var isTypingLabel: UILabel!
+    @IBOutlet weak var messageTxtHeight: NSLayoutConstraint!
+    @IBOutlet weak var buttonTextFieldView: UIView!
+    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
+    
+    
     
     
     var numberOfNewMessages = 0
@@ -24,6 +29,8 @@ class ChatVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         sendBtn.isHidden = true
+        isTypingLabel.isHidden = true
+//        buttonTextFieldView.bindToKeyboard()
         messageTableView.delegate = self
         messageTableView.dataSource = self
         messageTxtField.delegate = self
@@ -34,6 +41,7 @@ class ChatVC: UIViewController {
         
         NotificationCenter.default.addObserver(self, selector: #selector(ChatVC.userDataDidChange(_:)), name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(ChatVC.userDidSelectChannel(_:)), name: NOTIF_CHANNEL_SELECTED, object: nil)
+        
         
         if AuthService.instance.isLoggedIn {
             AuthService.instance.findUserByEmail { (success) in
@@ -75,16 +83,17 @@ class ChatVC: UIViewController {
                 if numberOfTypers > 1{
                     verb = "are"
                 }
+                self.isTypingLabel.isHidden = false
                 self.isTypingLabel.text = "\(names) \(verb) typing a message"
             }else {
                 self.isTypingLabel.text = ""
+                self.isTypingLabel.isHidden = true
             }
         }
         
     }
-   
     
-    
+
     @objc func userDataDidChange(_ notif : Notification){
         if AuthService.instance.isLoggedIn {
             onLoginGetMessages()
